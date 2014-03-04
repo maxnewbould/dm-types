@@ -9,7 +9,7 @@ module DataMapper
       end
 
       def dump(value)
-        p value
+        # p value
         value unless value.nil?
       end
 
