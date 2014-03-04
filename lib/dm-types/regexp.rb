@@ -10,12 +10,16 @@ module DataMapper
       end
 
       def dump(value)
-        value.source unless value.nil?
+        # value.source unless value.nil?
+        value unless value.nil?
       end
 
-      def typecast(value)
+      def typecast_to_primitive(value)
         load(value)
       end
+      # def typecast(value)
+      #   load(value)
+      # end
 
     end
   end
